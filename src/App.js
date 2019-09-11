@@ -4,8 +4,9 @@ import axios from 'axios';
 
 import HomePage from './pages/HomePage';
 import MoviePage from './pages/MoviePage';
+import keys from './config/keys';
 
-const key = '52a93b907ac18230b628d3ef873f49d7';
+const key = keys.moviedb_API_KEY;
 const baseUrlWithKey = `https://api.themoviedb.org/3/search/movie?api_key=${key}`;
 
 class App extends Component {
